@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_red_background"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewNuotti"
+        android:layout_width="418dp"
+        android:layout_height="292dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412"
+        app:srcCompat="@drawable/nuotti" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="115dp"
+        android:layout_height="119dp"
+        android:rotation="38"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.566"
+        app:srcCompat="@drawable/teekkarilakki_without_background" />
+
+    <TextView
+        android:id="@+id/textView_headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teekkarilaulut"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#EFE5E5"
+        android:textColorHighlight="#CC4F4F"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <Spinner
+        android:id="@+id/spinner_valitseYliopisto"
+        android:layout_width="308dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="92dp"
+        android:backgroundTint="#C1ABAB"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewNuotti"
+        app:layout_constraintVertical_bias="0.637" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

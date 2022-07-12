@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">MobileDevelopmentProject</string>
+    <string-array name="Yliopistot">
+        <item>Valitse Yliopisto</item>
+        <item>Aalto Yliopisto</item>
+        <item>LUT Yliopisto</item>
+        <item>Oulun Yliopisto</item>
+        <item>Tampereen Yliopisto</item>
+        <item>Turun Yliopisto</item>
+        <item>Vaasan Yliopisto</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
