@@ -6,33 +6,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_red_background"
-    tools:context=".AaltoYliopistoView">
+    tools:context=".AaltoYliopistoView"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="279dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="60dp"
+        android:gravity="center"
+        android:hint="search bar" />
+
+    <ImageView
+        android:id="@+id/nextButton"
+        android:layout_width="49dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="340dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/arrow_down_float" />
 
     <ScrollView
         android:id="@+id/scroller"
         android:layout_width="match_parent"
-        android:layout_height="400dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
-            <EditText
-                android:id="@+id/search_bar"
-                android:layout_width="279dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="60dp"
-                android:gravity="center"
-                android:hint="search bar" />
-
-            <ImageView
-                android:id="@+id/nextButton"
-                android:layout_width="49dp"
-                android:layout_height="31dp"
-                android:layout_marginLeft="340dp"
-                android:clickable="true"
-                app:srcCompat="@android:drawable/arrow_down_float" />
 
             <TextView
                 android:id="@+id/textViewSanat"
