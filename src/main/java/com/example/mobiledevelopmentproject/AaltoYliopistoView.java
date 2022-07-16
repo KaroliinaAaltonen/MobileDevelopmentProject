@@ -37,33 +37,12 @@ public class AaltoYliopistoView extends AppCompatActivity {
         ScrollView sv = (ScrollView)findViewById(R.id.scroller);
 
         ImageView nextResult = findViewById(R.id.nextButton);
-        String mytext = "";
-        try{
-            InputStream instream = getAssets().open("laulukirja_aalto");
-            int size = instream.available();
-            byte[] buffer = new byte[size];
-            instream.read(buffer);
-            mytext = new String(buffer);
-            instream.close();
-            lyrics.setText(mytext);
-        } catch(IOException e){
-
-        }
+        displayLyrics(lyrics);
 
         nextResult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                try{
-                    InputStream instream = getAssets().open("laulukirja_aalto");
-                    int size = instream.available();
-                    byte[] buffer = new byte[size];
-                    instream.read(buffer);
-                    String newText = new String(buffer);
-                    instream.close();
-                    lyrics.setText(newText);
-                } catch(IOException e){
-
-                }
+                displayLyrics(lyrics);
                 String ett =search_bar.getText().toString();
                 String tvt =lyrics.getText().toString();
 
@@ -89,5 +68,20 @@ public class AaltoYliopistoView extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void displayLyrics(TextView lyrics){
+        String mytext = "";
+        try{
+            InputStream instream = getAssets().open("laulukirja_aalto");
+            int size = instream.available();
+            byte[] buffer = new byte[size];
+            instream.read(buffer);
+            mytext = new String(buffer);
+            instream.close();
+            lyrics.setText(mytext);
+        } catch(IOException e){
+
+        }
     }
 }
